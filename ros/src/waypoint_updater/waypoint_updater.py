@@ -4,6 +4,8 @@ import rospy
 from geometry_msgs.msg import PoseStamped
 from styx_msgs.msg import Lane, Waypoint
 from scipy.spatial import KDTree
+from std_msgs.msg import Int32
+import numpy as np
 
 import math
 
@@ -22,7 +24,7 @@ as well as to verify your TL classifier.
 TODO (for Yousuf and Aaron): Stopline location for each traffic light.
 '''
 
-LOOKAHEAD_WPS = 200 # Number of waypoints we will publish. You can change this number
+LOOKAHEAD_WPS = 30 # Number of waypoints we will publish. You can change this number
 
 
 class WaypointUpdater(object):
@@ -35,7 +37,7 @@ class WaypointUpdater(object):
         # TODO: Add a subscriber for /traffic_waypoint and /obstacle_waypoint below
         #rospy.Subscriber
 
-        self.final_waypoints_pub = rospy.Publisher('final_waypoints', Lane, queue_size=1)
+        self.final_waypoints_pub = rospy.Publisher('/final_waypoints', Lane, queue_size=1)
 
         # TODO: Add other member variables you need below
         self.pose = None
@@ -43,14 +45,14 @@ class WaypointUpdater(object):
         self.waypoints_2d = None
         self.waypoint_tree = None
 
-	    self.stopline_wp_idx = -1
+	    #self.stopline_wp_idx = -1
 
         self.loop()
 
         #rospy.spin()
 
     def loop(self):
-        rate = rospy.Rate(5)
+        rate = rospy.Rate(50)
         while not rospy.is_shutdown():
             if not None in [self.pose, self.waypoint_tree]:
                 closest_waypoint_idx = self.get_closest_waypoint_idx()
@@ -87,7 +89,6 @@ class WaypointUpdater(object):
     def pose_cb(self, msg):
         # TODO: Implement
         self.pose = msg
-        pass
 
     def waypoints_cb(self, waypoints):
         # TODO: Implement
@@ -95,7 +96,6 @@ class WaypointUpdater(object):
         if not self.waypoints_2d:
             self.waypoints_2d = [[waypoint.pose.pose.position.x, waypoint.pose.pose.position.y] for waypoint in waypoints.waypoints]
             self.waypoint_tree = KDTree(self.waypoints_2d)
-        pass
 
     def traffic_cb(self, msg):
         # TODO: Callback for /traffic_waypoint message. Implement

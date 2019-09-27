@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "styx_msgs: 4 messages, 0 services")
+message(STATUS "styx_msgs: 5 messages, 0 services")
 
 set(MSG_I_FLAGS "-Istyx_msgs:/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg;-Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
 
@@ -25,6 +25,11 @@ add_custom_target(_styx_msgs_generate_messages_check_deps_${_filename}
 get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/Waypoint.msg" NAME_WE)
 add_custom_target(_styx_msgs_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "styx_msgs" "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/Waypoint.msg" "geometry_msgs/PoseStamped:geometry_msgs/Twist:std_msgs/Header:geometry_msgs/Quaternion:geometry_msgs/TwistStamped:geometry_msgs/Point:geometry_msgs/Vector3:geometry_msgs/Pose"
+)
+
+get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/CustomTrafficLight.msg" NAME_WE)
+add_custom_target(_styx_msgs_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "styx_msgs" "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/CustomTrafficLight.msg" ""
 )
 
 get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLightArray.msg" NAME_WE)
@@ -53,6 +58,12 @@ _generate_msg_cpp(styx_msgs
   "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/Waypoint.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/TwistStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/styx_msgs
+)
+_generate_msg_cpp(styx_msgs
+  "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/CustomTrafficLight.msg"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/styx_msgs
 )
 _generate_msg_cpp(styx_msgs
@@ -86,6 +97,8 @@ get_filename_component(_filename "/home/student/Documents/Final-System-Integrate
 add_dependencies(styx_msgs_generate_messages_cpp _styx_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/Waypoint.msg" NAME_WE)
 add_dependencies(styx_msgs_generate_messages_cpp _styx_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/CustomTrafficLight.msg" NAME_WE)
+add_dependencies(styx_msgs_generate_messages_cpp _styx_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLightArray.msg" NAME_WE)
 add_dependencies(styx_msgs_generate_messages_cpp _styx_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLight.msg" NAME_WE)
@@ -110,6 +123,12 @@ _generate_msg_eus(styx_msgs
   "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/Waypoint.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/TwistStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/styx_msgs
+)
+_generate_msg_eus(styx_msgs
+  "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/CustomTrafficLight.msg"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/styx_msgs
 )
 _generate_msg_eus(styx_msgs
@@ -143,6 +162,8 @@ get_filename_component(_filename "/home/student/Documents/Final-System-Integrate
 add_dependencies(styx_msgs_generate_messages_eus _styx_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/Waypoint.msg" NAME_WE)
 add_dependencies(styx_msgs_generate_messages_eus _styx_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/CustomTrafficLight.msg" NAME_WE)
+add_dependencies(styx_msgs_generate_messages_eus _styx_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLightArray.msg" NAME_WE)
 add_dependencies(styx_msgs_generate_messages_eus _styx_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLight.msg" NAME_WE)
@@ -167,6 +188,12 @@ _generate_msg_lisp(styx_msgs
   "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/Waypoint.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/TwistStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/styx_msgs
+)
+_generate_msg_lisp(styx_msgs
+  "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/CustomTrafficLight.msg"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/styx_msgs
 )
 _generate_msg_lisp(styx_msgs
@@ -200,6 +227,8 @@ get_filename_component(_filename "/home/student/Documents/Final-System-Integrate
 add_dependencies(styx_msgs_generate_messages_lisp _styx_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/Waypoint.msg" NAME_WE)
 add_dependencies(styx_msgs_generate_messages_lisp _styx_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/CustomTrafficLight.msg" NAME_WE)
+add_dependencies(styx_msgs_generate_messages_lisp _styx_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLightArray.msg" NAME_WE)
 add_dependencies(styx_msgs_generate_messages_lisp _styx_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLight.msg" NAME_WE)
@@ -224,6 +253,12 @@ _generate_msg_nodejs(styx_msgs
   "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/Waypoint.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/TwistStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/styx_msgs
+)
+_generate_msg_nodejs(styx_msgs
+  "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/CustomTrafficLight.msg"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/styx_msgs
 )
 _generate_msg_nodejs(styx_msgs
@@ -257,6 +292,8 @@ get_filename_component(_filename "/home/student/Documents/Final-System-Integrate
 add_dependencies(styx_msgs_generate_messages_nodejs _styx_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/Waypoint.msg" NAME_WE)
 add_dependencies(styx_msgs_generate_messages_nodejs _styx_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/CustomTrafficLight.msg" NAME_WE)
+add_dependencies(styx_msgs_generate_messages_nodejs _styx_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLightArray.msg" NAME_WE)
 add_dependencies(styx_msgs_generate_messages_nodejs _styx_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLight.msg" NAME_WE)
@@ -281,6 +318,12 @@ _generate_msg_py(styx_msgs
   "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/Waypoint.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/TwistStamped.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/styx_msgs
+)
+_generate_msg_py(styx_msgs
+  "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/CustomTrafficLight.msg"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/styx_msgs
 )
 _generate_msg_py(styx_msgs
@@ -313,6 +356,8 @@ add_dependencies(styx_msgs_generate_messages styx_msgs_generate_messages_py)
 get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/Lane.msg" NAME_WE)
 add_dependencies(styx_msgs_generate_messages_py _styx_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/Waypoint.msg" NAME_WE)
+add_dependencies(styx_msgs_generate_messages_py _styx_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/CustomTrafficLight.msg" NAME_WE)
 add_dependencies(styx_msgs_generate_messages_py _styx_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLightArray.msg" NAME_WE)
 add_dependencies(styx_msgs_generate_messages_py _styx_msgs_generate_messages_check_deps_${_filename})

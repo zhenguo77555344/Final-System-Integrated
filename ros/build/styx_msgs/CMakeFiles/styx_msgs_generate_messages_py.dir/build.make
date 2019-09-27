@@ -55,6 +55,7 @@ include styx_msgs/CMakeFiles/styx_msgs_generate_messages_py.dir/progress.make
 
 styx_msgs/CMakeFiles/styx_msgs_generate_messages_py: /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_Lane.py
 styx_msgs/CMakeFiles/styx_msgs_generate_messages_py: /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_Waypoint.py
+styx_msgs/CMakeFiles/styx_msgs_generate_messages_py: /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_CustomTrafficLight.py
 styx_msgs/CMakeFiles/styx_msgs_generate_messages_py: /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_TrafficLightArray.py
 styx_msgs/CMakeFiles/styx_msgs_generate_messages_py: /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_TrafficLight.py
 styx_msgs/CMakeFiles/styx_msgs_generate_messages_py: /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/__init__.py
@@ -87,6 +88,11 @@ styx_msgs/CMakeFiles/styx_msgs_generate_messages_py: /home/student/Documents/Fin
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Documents/Final-System-Integrated/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG styx_msgs/Waypoint"
 	cd /home/student/Documents/Final-System-Integrated/ros/build/styx_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/Waypoint.msg -Istyx_msgs:/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p styx_msgs -o /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg
 
+/home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_CustomTrafficLight.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_CustomTrafficLight.py: /home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/CustomTrafficLight.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Documents/Final-System-Integrated/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG styx_msgs/CustomTrafficLight"
+	cd /home/student/Documents/Final-System-Integrated/ros/build/styx_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/CustomTrafficLight.msg -Istyx_msgs:/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p styx_msgs -o /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg
+
 /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_TrafficLightArray.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
 /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_TrafficLightArray.py: /home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLightArray.msg
 /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_TrafficLightArray.py: /opt/ros/kinetic/share/geometry_msgs/msg/PoseStamped.msg
@@ -95,7 +101,7 @@ styx_msgs/CMakeFiles/styx_msgs_generate_messages_py: /home/student/Documents/Fin
 /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_TrafficLightArray.py: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
 /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_TrafficLightArray.py: /home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLight.msg
 /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_TrafficLightArray.py: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Documents/Final-System-Integrated/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG styx_msgs/TrafficLightArray"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Documents/Final-System-Integrated/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG styx_msgs/TrafficLightArray"
 	cd /home/student/Documents/Final-System-Integrated/ros/build/styx_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLightArray.msg -Istyx_msgs:/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p styx_msgs -o /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg
 
 /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_TrafficLight.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
@@ -105,20 +111,22 @@ styx_msgs/CMakeFiles/styx_msgs_generate_messages_py: /home/student/Documents/Fin
 /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_TrafficLight.py: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
 /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_TrafficLight.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_TrafficLight.py: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Documents/Final-System-Integrated/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG styx_msgs/TrafficLight"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Documents/Final-System-Integrated/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG styx_msgs/TrafficLight"
 	cd /home/student/Documents/Final-System-Integrated/ros/build/styx_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLight.msg -Istyx_msgs:/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p styx_msgs -o /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg
 
 /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
 /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/__init__.py: /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_Lane.py
 /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/__init__.py: /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_Waypoint.py
+/home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/__init__.py: /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_CustomTrafficLight.py
 /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/__init__.py: /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_TrafficLightArray.py
 /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/__init__.py: /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_TrafficLight.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Documents/Final-System-Integrated/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python msg __init__.py for styx_msgs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Documents/Final-System-Integrated/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python msg __init__.py for styx_msgs"
 	cd /home/student/Documents/Final-System-Integrated/ros/build/styx_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg --initpy
 
 styx_msgs_generate_messages_py: styx_msgs/CMakeFiles/styx_msgs_generate_messages_py
 styx_msgs_generate_messages_py: /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_Lane.py
 styx_msgs_generate_messages_py: /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_Waypoint.py
+styx_msgs_generate_messages_py: /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_CustomTrafficLight.py
 styx_msgs_generate_messages_py: /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_TrafficLightArray.py
 styx_msgs_generate_messages_py: /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/_TrafficLight.py
 styx_msgs_generate_messages_py: /home/student/Documents/Final-System-Integrated/ros/devel/lib/python2.7/dist-packages/styx_msgs/msg/__init__.py

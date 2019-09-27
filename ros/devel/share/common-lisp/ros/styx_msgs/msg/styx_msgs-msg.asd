@@ -6,6 +6,8 @@
                :std_msgs-msg
 )
   :components ((:file "_package")
+    (:file "CustomTrafficLight" :depends-on ("_package_CustomTrafficLight"))
+    (:file "_package_CustomTrafficLight" :depends-on ("_package"))
     (:file "Lane" :depends-on ("_package_Lane"))
     (:file "_package_Lane" :depends-on ("_package"))
     (:file "TrafficLight" :depends-on ("_package_TrafficLight"))

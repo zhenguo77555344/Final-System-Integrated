@@ -246,6 +246,12 @@ _CATKIN_GTEST_INCLUDE:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _CATKIN_GTEST_SRC:FILEPATH=/usr/src/gtest/src/gtest.cc
 
+//Path to a file.
+_file_name:FILEPATH=/home/student/Documents/Final-System-Integrated/ros/src/wolfpack_visualisation/test/visualisation.test
+
+//Path to a file.
+_path_name:FILEPATH=/home/student/Documents/Final-System-Integrated/ros/src/twist_controller/test/test_stability_controller.py
+
 //The directory containing a CMake configuration file for actionlib.
 actionlib_DIR:PATH=/opt/ros/kinetic/share/actionlib/cmake
 
@@ -277,7 +283,7 @@ cpp_common_DIR:PATH=/opt/ros/kinetic/share/cpp_common/cmake
 cv_bridge_DIR:PATH=/opt/ros/kinetic/share/cv_bridge/cmake
 
 //The directory containing a CMake configuration file for dbw_mkz_msgs.
-dbw_mkz_msgs_DIR:PATH=/opt/ros/kinetic/share/dbw_mkz_msgs/cmake
+dbw_mkz_msgs_DIR:PATH=/home/student/Documents/Programming-a-Real-Self-Driving-Car/ros/devel/share/dbw_mkz_msgs/cmake
 
 //The directory containing a CMake configuration file for dynamic_reconfigure.
 dynamic_reconfigure_DIR:PATH=/opt/ros/kinetic/share/dynamic_reconfigure/cmake
@@ -394,6 +400,9 @@ rospack_DIR:PATH=/opt/ros/kinetic/share/rospack/cmake
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/kinetic/share/rospy/cmake
 
+//The directory containing a CMake configuration file for rostest.
+rostest_DIR:PATH=/opt/ros/kinetic/share/rostest/cmake
+
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=/opt/ros/kinetic/share/rostime/cmake
 
@@ -475,6 +484,12 @@ waypoint_updater_DIR:PATH=/home/student/Documents/Final-System-Integrated/ros/de
 //Value Computed by CMake
 waypoint_updater_SOURCE_DIR:STATIC=/home/student/Documents/Final-System-Integrated/ros/src/waypoint_updater
 
+//Value Computed by CMake
+wolfpack_visualisation_BINARY_DIR:STATIC=/home/student/Documents/Final-System-Integrated/ros/build/wolfpack_visualisation
+
+//Value Computed by CMake
+wolfpack_visualisation_SOURCE_DIR:STATIC=/home/student/Documents/Final-System-Integrated/ros/src/wolfpack_visualisation
+
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/kinetic/share/xmlrpcpp/cmake
 
@@ -485,7 +500,7 @@ xmlrpcpp_DIR:PATH=/opt/ros/kinetic/share/xmlrpcpp/cmake
 
 //catkin environment
 CATKIN_ENV:INTERNAL=/home/student/Documents/Final-System-Integrated/ros/build/catkin_generated/env_cached.sh
-CATKIN_TEST_RESULTS_DIR:INTERNAL=/home/student/Documents/Final-System-Integrated/ros/build/test_results
+CATKIN_TEST_RESULTS_DIR:INTERNAL=/home/student/Documents/CarND-Capstone-Wolf-Pack/ros/build/test_results
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
@@ -560,7 +575,7 @@ CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
 CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/student/Documents/Final-System-Integrated/ros/src
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/student/Documents/CarND-Capstone-Wolf-Pack/ros/src
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
@@ -580,7 +595,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

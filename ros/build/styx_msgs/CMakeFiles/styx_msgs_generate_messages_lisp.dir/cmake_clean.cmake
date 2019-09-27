@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/styx_msgs_generate_messages_lisp"
   "/home/student/Documents/Final-System-Integrated/ros/devel/share/common-lisp/ros/styx_msgs/msg/Lane.lisp"
   "/home/student/Documents/Final-System-Integrated/ros/devel/share/common-lisp/ros/styx_msgs/msg/Waypoint.lisp"
+  "/home/student/Documents/Final-System-Integrated/ros/devel/share/common-lisp/ros/styx_msgs/msg/CustomTrafficLight.lisp"
   "/home/student/Documents/Final-System-Integrated/ros/devel/share/common-lisp/ros/styx_msgs/msg/TrafficLightArray.lisp"
   "/home/student/Documents/Final-System-Integrated/ros/devel/share/common-lisp/ros/styx_msgs/msg/TrafficLight.lisp"
 )

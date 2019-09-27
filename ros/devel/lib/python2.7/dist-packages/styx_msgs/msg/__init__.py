@@ -1,3 +1,4 @@
+from ._CustomTrafficLight import *
 from ._Lane import *
 from ._TrafficLight import *
 from ._TrafficLightArray import *

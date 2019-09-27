@@ -1,0 +1,8 @@
+prefix=/home/student/Documents/Final-System-Integrated/ros/devel
+
+Name: wolfpack_visualisation
+Description: Description of wolfpack_visualisation
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/student/Documents/Final-System-Integrated/ros/devel/lib 
+Requires: 

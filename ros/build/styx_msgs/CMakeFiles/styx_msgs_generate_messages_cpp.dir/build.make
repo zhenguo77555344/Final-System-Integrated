@@ -55,6 +55,7 @@ include styx_msgs/CMakeFiles/styx_msgs_generate_messages_cpp.dir/progress.make
 
 styx_msgs/CMakeFiles/styx_msgs_generate_messages_cpp: /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/Lane.h
 styx_msgs/CMakeFiles/styx_msgs_generate_messages_cpp: /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/Waypoint.h
+styx_msgs/CMakeFiles/styx_msgs_generate_messages_cpp: /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/CustomTrafficLight.h
 styx_msgs/CMakeFiles/styx_msgs_generate_messages_cpp: /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/TrafficLightArray.h
 styx_msgs/CMakeFiles/styx_msgs_generate_messages_cpp: /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/TrafficLight.h
 
@@ -88,6 +89,12 @@ styx_msgs/CMakeFiles/styx_msgs_generate_messages_cpp: /home/student/Documents/Fi
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Documents/Final-System-Integrated/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from styx_msgs/Waypoint.msg"
 	cd /home/student/Documents/Final-System-Integrated/ros/build/styx_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/Waypoint.msg -Istyx_msgs:/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p styx_msgs -o /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
 
+/home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/CustomTrafficLight.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/CustomTrafficLight.h: /home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/CustomTrafficLight.msg
+/home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/CustomTrafficLight.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Documents/Final-System-Integrated/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from styx_msgs/CustomTrafficLight.msg"
+	cd /home/student/Documents/Final-System-Integrated/ros/build/styx_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/CustomTrafficLight.msg -Istyx_msgs:/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p styx_msgs -o /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
+
 /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/TrafficLightArray.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
 /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/TrafficLightArray.h: /home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLightArray.msg
 /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/TrafficLightArray.h: /opt/ros/kinetic/share/geometry_msgs/msg/PoseStamped.msg
@@ -97,7 +104,7 @@ styx_msgs/CMakeFiles/styx_msgs_generate_messages_cpp: /home/student/Documents/Fi
 /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/TrafficLightArray.h: /home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLight.msg
 /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/TrafficLightArray.h: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
 /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/TrafficLightArray.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Documents/Final-System-Integrated/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from styx_msgs/TrafficLightArray.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Documents/Final-System-Integrated/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from styx_msgs/TrafficLightArray.msg"
 	cd /home/student/Documents/Final-System-Integrated/ros/build/styx_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLightArray.msg -Istyx_msgs:/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p styx_msgs -o /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/TrafficLight.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
@@ -108,12 +115,13 @@ styx_msgs/CMakeFiles/styx_msgs_generate_messages_cpp: /home/student/Documents/Fi
 /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/TrafficLight.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/TrafficLight.h: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
 /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/TrafficLight.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Documents/Final-System-Integrated/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from styx_msgs/TrafficLight.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Documents/Final-System-Integrated/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from styx_msgs/TrafficLight.msg"
 	cd /home/student/Documents/Final-System-Integrated/ros/build/styx_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLight.msg -Istyx_msgs:/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p styx_msgs -o /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 styx_msgs_generate_messages_cpp: styx_msgs/CMakeFiles/styx_msgs_generate_messages_cpp
 styx_msgs_generate_messages_cpp: /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/Lane.h
 styx_msgs_generate_messages_cpp: /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/Waypoint.h
+styx_msgs_generate_messages_cpp: /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/CustomTrafficLight.h
 styx_msgs_generate_messages_cpp: /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/TrafficLightArray.h
 styx_msgs_generate_messages_cpp: /home/student/Documents/Final-System-Integrated/ros/devel/include/styx_msgs/TrafficLight.h
 styx_msgs_generate_messages_cpp: styx_msgs/CMakeFiles/styx_msgs_generate_messages_cpp.dir/build.make

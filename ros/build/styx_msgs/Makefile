@@ -56,16 +56,17 @@ CMAKE_BINARY_DIR = /home/student/Documents/Final-System-Integrated/ros/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -88,6 +89,17 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -98,18 +110,6 @@ install/local: preinstall
 install/local/fast: install/local
 
 .PHONY : install/local/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # Special rule for the target test
 test:
@@ -166,36 +166,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-styx_msgs/CMakeFiles/styx_msgs_geneus.dir/rule:
-	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f CMakeFiles/Makefile2 styx_msgs/CMakeFiles/styx_msgs_geneus.dir/rule
-.PHONY : styx_msgs/CMakeFiles/styx_msgs_geneus.dir/rule
-
-# Convenience name for target.
-styx_msgs_geneus: styx_msgs/CMakeFiles/styx_msgs_geneus.dir/rule
-
-.PHONY : styx_msgs_geneus
-
-# fast build rule for target.
-styx_msgs_geneus/fast:
-	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f styx_msgs/CMakeFiles/styx_msgs_geneus.dir/build.make styx_msgs/CMakeFiles/styx_msgs_geneus.dir/build
-.PHONY : styx_msgs_geneus/fast
-
-# Convenience name for target.
-styx_msgs/CMakeFiles/styx_msgs_genlisp.dir/rule:
-	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f CMakeFiles/Makefile2 styx_msgs/CMakeFiles/styx_msgs_genlisp.dir/rule
-.PHONY : styx_msgs/CMakeFiles/styx_msgs_genlisp.dir/rule
-
-# Convenience name for target.
-styx_msgs_genlisp: styx_msgs/CMakeFiles/styx_msgs_genlisp.dir/rule
-
-.PHONY : styx_msgs_genlisp
-
-# fast build rule for target.
-styx_msgs_genlisp/fast:
-	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f styx_msgs/CMakeFiles/styx_msgs_genlisp.dir/build.make styx_msgs/CMakeFiles/styx_msgs_genlisp.dir/build
-.PHONY : styx_msgs_genlisp/fast
-
-# Convenience name for target.
 styx_msgs/CMakeFiles/styx_msgs_gencpp.dir/rule:
 	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f CMakeFiles/Makefile2 styx_msgs/CMakeFiles/styx_msgs_gencpp.dir/rule
 .PHONY : styx_msgs/CMakeFiles/styx_msgs_gencpp.dir/rule
@@ -239,6 +209,21 @@ _styx_msgs_generate_messages_check_deps_TrafficLightArray: styx_msgs/CMakeFiles/
 _styx_msgs_generate_messages_check_deps_TrafficLightArray/fast:
 	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f styx_msgs/CMakeFiles/_styx_msgs_generate_messages_check_deps_TrafficLightArray.dir/build.make styx_msgs/CMakeFiles/_styx_msgs_generate_messages_check_deps_TrafficLightArray.dir/build
 .PHONY : _styx_msgs_generate_messages_check_deps_TrafficLightArray/fast
+
+# Convenience name for target.
+styx_msgs/CMakeFiles/_styx_msgs_generate_messages_check_deps_CustomTrafficLight.dir/rule:
+	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f CMakeFiles/Makefile2 styx_msgs/CMakeFiles/_styx_msgs_generate_messages_check_deps_CustomTrafficLight.dir/rule
+.PHONY : styx_msgs/CMakeFiles/_styx_msgs_generate_messages_check_deps_CustomTrafficLight.dir/rule
+
+# Convenience name for target.
+_styx_msgs_generate_messages_check_deps_CustomTrafficLight: styx_msgs/CMakeFiles/_styx_msgs_generate_messages_check_deps_CustomTrafficLight.dir/rule
+
+.PHONY : _styx_msgs_generate_messages_check_deps_CustomTrafficLight
+
+# fast build rule for target.
+_styx_msgs_generate_messages_check_deps_CustomTrafficLight/fast:
+	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f styx_msgs/CMakeFiles/_styx_msgs_generate_messages_check_deps_CustomTrafficLight.dir/build.make styx_msgs/CMakeFiles/_styx_msgs_generate_messages_check_deps_CustomTrafficLight.dir/build
+.PHONY : _styx_msgs_generate_messages_check_deps_CustomTrafficLight/fast
 
 # Convenience name for target.
 styx_msgs/CMakeFiles/styx_msgs_generate_messages_eus.dir/rule:
@@ -346,6 +331,36 @@ styx_msgs_generate_messages_py/fast:
 .PHONY : styx_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+styx_msgs/CMakeFiles/styx_msgs_geneus.dir/rule:
+	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f CMakeFiles/Makefile2 styx_msgs/CMakeFiles/styx_msgs_geneus.dir/rule
+.PHONY : styx_msgs/CMakeFiles/styx_msgs_geneus.dir/rule
+
+# Convenience name for target.
+styx_msgs_geneus: styx_msgs/CMakeFiles/styx_msgs_geneus.dir/rule
+
+.PHONY : styx_msgs_geneus
+
+# fast build rule for target.
+styx_msgs_geneus/fast:
+	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f styx_msgs/CMakeFiles/styx_msgs_geneus.dir/build.make styx_msgs/CMakeFiles/styx_msgs_geneus.dir/build
+.PHONY : styx_msgs_geneus/fast
+
+# Convenience name for target.
+styx_msgs/CMakeFiles/styx_msgs_genlisp.dir/rule:
+	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f CMakeFiles/Makefile2 styx_msgs/CMakeFiles/styx_msgs_genlisp.dir/rule
+.PHONY : styx_msgs/CMakeFiles/styx_msgs_genlisp.dir/rule
+
+# Convenience name for target.
+styx_msgs_genlisp: styx_msgs/CMakeFiles/styx_msgs_genlisp.dir/rule
+
+.PHONY : styx_msgs_genlisp
+
+# fast build rule for target.
+styx_msgs_genlisp/fast:
+	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f styx_msgs/CMakeFiles/styx_msgs_genlisp.dir/build.make styx_msgs/CMakeFiles/styx_msgs_genlisp.dir/build
+.PHONY : styx_msgs_genlisp/fast
+
+# Convenience name for target.
 styx_msgs/CMakeFiles/styx_msgs_generate_messages_lisp.dir/rule:
 	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f CMakeFiles/Makefile2 styx_msgs/CMakeFiles/styx_msgs_generate_messages_lisp.dir/rule
 .PHONY : styx_msgs/CMakeFiles/styx_msgs_generate_messages_lisp.dir/rule
@@ -411,13 +426,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... styx_msgs_geneus"
-	@echo "... styx_msgs_genlisp"
-	@echo "... rebuild_cache"
+	@echo "... install"
 	@echo "... styx_msgs_gencpp"
 	@echo "... install/strip"
 	@echo "... _styx_msgs_generate_messages_check_deps_TrafficLight"
 	@echo "... _styx_msgs_generate_messages_check_deps_TrafficLightArray"
+	@echo "... _styx_msgs_generate_messages_check_deps_CustomTrafficLight"
 	@echo "... styx_msgs_generate_messages_eus"
 	@echo "... styx_msgs_generate_messages_nodejs"
 	@echo "... list_install_components"
@@ -426,11 +440,13 @@ help:
 	@echo "... styx_msgs_generate_messages"
 	@echo "... _styx_msgs_generate_messages_check_deps_Lane"
 	@echo "... styx_msgs_generate_messages_py"
+	@echo "... styx_msgs_geneus"
+	@echo "... styx_msgs_genlisp"
+	@echo "... rebuild_cache"
 	@echo "... styx_msgs_generate_messages_lisp"
 	@echo "... _catkin_empty_exported_target"
 	@echo "... install/local"
 	@echo "... styx_msgs_gennodejs"
-	@echo "... install"
 	@echo "... styx_msgs_genpy"
 	@echo "... test"
 	@echo "... edit_cache"

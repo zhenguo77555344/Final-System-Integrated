@@ -1,0 +1,11 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~Steer_P" : \b [double] P value for Steer PID controller min: 0.0, default: 0.58, max: 1.0
+- \b "~Steer_I" : \b [double] I value for Steer PID controller min: 0.0, default: 0.0108, max: 1.0
+- \b "~Steer_D" : \b [double] D value for Steer PID controller min: 0.0, default: 0.001, max: 1.0
+- \b "~Throttle_P" : \b [double] P value for Throttle PID controller min: 0.0, default: 0.6, max: 1.0
+- \b "~Throttle_I" : \b [double] I value for Throttle PID controller min: 0.0, default: 0.01, max: 1.0
+- \b "~Throttle_D" : \b [double] D value for Throttle PID controller min: 0.0, default: 0.0, max: 1.0
+

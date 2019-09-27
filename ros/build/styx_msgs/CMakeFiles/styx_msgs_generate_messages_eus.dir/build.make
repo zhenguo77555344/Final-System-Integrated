@@ -55,6 +55,7 @@ include styx_msgs/CMakeFiles/styx_msgs_generate_messages_eus.dir/progress.make
 
 styx_msgs/CMakeFiles/styx_msgs_generate_messages_eus: /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg/Lane.l
 styx_msgs/CMakeFiles/styx_msgs_generate_messages_eus: /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg/Waypoint.l
+styx_msgs/CMakeFiles/styx_msgs_generate_messages_eus: /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg/CustomTrafficLight.l
 styx_msgs/CMakeFiles/styx_msgs_generate_messages_eus: /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg/TrafficLightArray.l
 styx_msgs/CMakeFiles/styx_msgs_generate_messages_eus: /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg/TrafficLight.l
 styx_msgs/CMakeFiles/styx_msgs_generate_messages_eus: /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/manifest.l
@@ -87,6 +88,11 @@ styx_msgs/CMakeFiles/styx_msgs_generate_messages_eus: /home/student/Documents/Fi
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Documents/Final-System-Integrated/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from styx_msgs/Waypoint.msg"
 	cd /home/student/Documents/Final-System-Integrated/ros/build/styx_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/Waypoint.msg -Istyx_msgs:/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p styx_msgs -o /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg
 
+/home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg/CustomTrafficLight.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg/CustomTrafficLight.l: /home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/CustomTrafficLight.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Documents/Final-System-Integrated/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from styx_msgs/CustomTrafficLight.msg"
+	cd /home/student/Documents/Final-System-Integrated/ros/build/styx_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/CustomTrafficLight.msg -Istyx_msgs:/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p styx_msgs -o /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg
+
 /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg/TrafficLightArray.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
 /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg/TrafficLightArray.l: /home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLightArray.msg
 /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg/TrafficLightArray.l: /opt/ros/kinetic/share/geometry_msgs/msg/PoseStamped.msg
@@ -95,7 +101,7 @@ styx_msgs/CMakeFiles/styx_msgs_generate_messages_eus: /home/student/Documents/Fi
 /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg/TrafficLightArray.l: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
 /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg/TrafficLightArray.l: /home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLight.msg
 /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg/TrafficLightArray.l: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Documents/Final-System-Integrated/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from styx_msgs/TrafficLightArray.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Documents/Final-System-Integrated/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from styx_msgs/TrafficLightArray.msg"
 	cd /home/student/Documents/Final-System-Integrated/ros/build/styx_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLightArray.msg -Istyx_msgs:/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p styx_msgs -o /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg
 
 /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg/TrafficLight.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
@@ -105,16 +111,17 @@ styx_msgs/CMakeFiles/styx_msgs_generate_messages_eus: /home/student/Documents/Fi
 /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg/TrafficLight.l: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
 /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg/TrafficLight.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg/TrafficLight.l: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Documents/Final-System-Integrated/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from styx_msgs/TrafficLight.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Documents/Final-System-Integrated/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp code from styx_msgs/TrafficLight.msg"
 	cd /home/student/Documents/Final-System-Integrated/ros/build/styx_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLight.msg -Istyx_msgs:/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p styx_msgs -o /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg
 
 /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Documents/Final-System-Integrated/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp manifest code for styx_msgs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/Documents/Final-System-Integrated/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating EusLisp manifest code for styx_msgs"
 	cd /home/student/Documents/Final-System-Integrated/ros/build/styx_msgs && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs styx_msgs geometry_msgs sensor_msgs std_msgs
 
 styx_msgs_generate_messages_eus: styx_msgs/CMakeFiles/styx_msgs_generate_messages_eus
 styx_msgs_generate_messages_eus: /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg/Lane.l
 styx_msgs_generate_messages_eus: /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg/Waypoint.l
+styx_msgs_generate_messages_eus: /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg/CustomTrafficLight.l
 styx_msgs_generate_messages_eus: /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg/TrafficLightArray.l
 styx_msgs_generate_messages_eus: /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/msg/TrafficLight.l
 styx_msgs_generate_messages_eus: /home/student/Documents/Final-System-Integrated/ros/devel/share/roseus/ros/styx_msgs/manifest.l

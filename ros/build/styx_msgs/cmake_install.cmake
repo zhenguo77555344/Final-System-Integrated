@@ -34,6 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/styx_msgs/msg" TYPE FILE FILES
+    "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/CustomTrafficLight.msg"
     "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLight.msg"
     "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLightArray.msg"
     "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/Waypoint.msg"

@@ -56,16 +56,6 @@ CMAKE_BINARY_DIR = /home/student/Documents/Final-System-Integrated/ros/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -89,16 +79,16 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
 
-# Special rule for the target install/strip
-install/strip/fast: install/strip
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
 
-.PHONY : install/strip/fast
+.PHONY : edit_cache/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -111,6 +101,27 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
+
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -121,17 +132,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -165,19 +165,131 @@ depend:
 	cd /home/student/Documents/Final-System-Integrated/ros/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+waypoint_updater/CMakeFiles/_run_tests_waypoint_updater_rostest.dir/rule:
+	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f CMakeFiles/Makefile2 waypoint_updater/CMakeFiles/_run_tests_waypoint_updater_rostest.dir/rule
+.PHONY : waypoint_updater/CMakeFiles/_run_tests_waypoint_updater_rostest.dir/rule
+
+# Convenience name for target.
+_run_tests_waypoint_updater_rostest: waypoint_updater/CMakeFiles/_run_tests_waypoint_updater_rostest.dir/rule
+
+.PHONY : _run_tests_waypoint_updater_rostest
+
+# fast build rule for target.
+_run_tests_waypoint_updater_rostest/fast:
+	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f waypoint_updater/CMakeFiles/_run_tests_waypoint_updater_rostest.dir/build.make waypoint_updater/CMakeFiles/_run_tests_waypoint_updater_rostest.dir/build
+.PHONY : _run_tests_waypoint_updater_rostest/fast
+
+# Convenience name for target.
+waypoint_updater/CMakeFiles/run_tests_waypoint_updater_rostest.dir/rule:
+	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f CMakeFiles/Makefile2 waypoint_updater/CMakeFiles/run_tests_waypoint_updater_rostest.dir/rule
+.PHONY : waypoint_updater/CMakeFiles/run_tests_waypoint_updater_rostest.dir/rule
+
+# Convenience name for target.
+run_tests_waypoint_updater_rostest: waypoint_updater/CMakeFiles/run_tests_waypoint_updater_rostest.dir/rule
+
+.PHONY : run_tests_waypoint_updater_rostest
+
+# fast build rule for target.
+run_tests_waypoint_updater_rostest/fast:
+	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f waypoint_updater/CMakeFiles/run_tests_waypoint_updater_rostest.dir/build.make waypoint_updater/CMakeFiles/run_tests_waypoint_updater_rostest.dir/build
+.PHONY : run_tests_waypoint_updater_rostest/fast
+
+# Convenience name for target.
+waypoint_updater/CMakeFiles/run_tests_waypoint_updater.dir/rule:
+	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f CMakeFiles/Makefile2 waypoint_updater/CMakeFiles/run_tests_waypoint_updater.dir/rule
+.PHONY : waypoint_updater/CMakeFiles/run_tests_waypoint_updater.dir/rule
+
+# Convenience name for target.
+run_tests_waypoint_updater: waypoint_updater/CMakeFiles/run_tests_waypoint_updater.dir/rule
+
+.PHONY : run_tests_waypoint_updater
+
+# fast build rule for target.
+run_tests_waypoint_updater/fast:
+	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f waypoint_updater/CMakeFiles/run_tests_waypoint_updater.dir/build.make waypoint_updater/CMakeFiles/run_tests_waypoint_updater.dir/build
+.PHONY : run_tests_waypoint_updater/fast
+
+# Convenience name for target.
+waypoint_updater/CMakeFiles/_run_tests_waypoint_updater.dir/rule:
+	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f CMakeFiles/Makefile2 waypoint_updater/CMakeFiles/_run_tests_waypoint_updater.dir/rule
+.PHONY : waypoint_updater/CMakeFiles/_run_tests_waypoint_updater.dir/rule
+
+# Convenience name for target.
+_run_tests_waypoint_updater: waypoint_updater/CMakeFiles/_run_tests_waypoint_updater.dir/rule
+
+.PHONY : _run_tests_waypoint_updater
+
+# fast build rule for target.
+_run_tests_waypoint_updater/fast:
+	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f waypoint_updater/CMakeFiles/_run_tests_waypoint_updater.dir/build.make waypoint_updater/CMakeFiles/_run_tests_waypoint_updater.dir/build
+.PHONY : _run_tests_waypoint_updater/fast
+
+# Convenience name for target.
+waypoint_updater/CMakeFiles/run_tests_waypoint_updater_rostest_test_waypoint_updater.test.dir/rule:
+	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f CMakeFiles/Makefile2 waypoint_updater/CMakeFiles/run_tests_waypoint_updater_rostest_test_waypoint_updater.test.dir/rule
+.PHONY : waypoint_updater/CMakeFiles/run_tests_waypoint_updater_rostest_test_waypoint_updater.test.dir/rule
+
+# Convenience name for target.
+run_tests_waypoint_updater_rostest_test_waypoint_updater.test: waypoint_updater/CMakeFiles/run_tests_waypoint_updater_rostest_test_waypoint_updater.test.dir/rule
+
+.PHONY : run_tests_waypoint_updater_rostest_test_waypoint_updater.test
+
+# fast build rule for target.
+run_tests_waypoint_updater_rostest_test_waypoint_updater.test/fast:
+	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f waypoint_updater/CMakeFiles/run_tests_waypoint_updater_rostest_test_waypoint_updater.test.dir/build.make waypoint_updater/CMakeFiles/run_tests_waypoint_updater_rostest_test_waypoint_updater.test.dir/build
+.PHONY : run_tests_waypoint_updater_rostest_test_waypoint_updater.test/fast
+
+# Convenience name for target.
+waypoint_updater/CMakeFiles/_run_tests_waypoint_updater_rostest_test_waypoint_updater.test.dir/rule:
+	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f CMakeFiles/Makefile2 waypoint_updater/CMakeFiles/_run_tests_waypoint_updater_rostest_test_waypoint_updater.test.dir/rule
+.PHONY : waypoint_updater/CMakeFiles/_run_tests_waypoint_updater_rostest_test_waypoint_updater.test.dir/rule
+
+# Convenience name for target.
+_run_tests_waypoint_updater_rostest_test_waypoint_updater.test: waypoint_updater/CMakeFiles/_run_tests_waypoint_updater_rostest_test_waypoint_updater.test.dir/rule
+
+.PHONY : _run_tests_waypoint_updater_rostest_test_waypoint_updater.test
+
+# fast build rule for target.
+_run_tests_waypoint_updater_rostest_test_waypoint_updater.test/fast:
+	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f waypoint_updater/CMakeFiles/_run_tests_waypoint_updater_rostest_test_waypoint_updater.test.dir/build.make waypoint_updater/CMakeFiles/_run_tests_waypoint_updater_rostest_test_waypoint_updater.test.dir/build
+.PHONY : _run_tests_waypoint_updater_rostest_test_waypoint_updater.test/fast
+
+# Convenience name for target.
+waypoint_updater/CMakeFiles/clean_test_results_waypoint_updater.dir/rule:
+	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f CMakeFiles/Makefile2 waypoint_updater/CMakeFiles/clean_test_results_waypoint_updater.dir/rule
+.PHONY : waypoint_updater/CMakeFiles/clean_test_results_waypoint_updater.dir/rule
+
+# Convenience name for target.
+clean_test_results_waypoint_updater: waypoint_updater/CMakeFiles/clean_test_results_waypoint_updater.dir/rule
+
+.PHONY : clean_test_results_waypoint_updater
+
+# fast build rule for target.
+clean_test_results_waypoint_updater/fast:
+	cd /home/student/Documents/Final-System-Integrated/ros/build && $(MAKE) -f waypoint_updater/CMakeFiles/clean_test_results_waypoint_updater.dir/build.make waypoint_updater/CMakeFiles/clean_test_results_waypoint_updater.dir/build
+.PHONY : clean_test_results_waypoint_updater/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... list_install_components"
 	@echo "... install"
 	@echo "... rebuild_cache"
-	@echo "... install/strip"
-	@echo "... install/local"
-	@echo "... test"
 	@echo "... edit_cache"
+	@echo "... _run_tests_waypoint_updater_rostest"
+	@echo "... run_tests_waypoint_updater_rostest"
+	@echo "... run_tests_waypoint_updater"
+	@echo "... install/local"
+	@echo "... _run_tests_waypoint_updater"
+	@echo "... list_install_components"
+	@echo "... install/strip"
+	@echo "... run_tests_waypoint_updater_rostest_test_waypoint_updater.test"
+	@echo "... test"
+	@echo "... _run_tests_waypoint_updater_rostest_test_waypoint_updater.test"
+	@echo "... clean_test_results_waypoint_updater"
 .PHONY : help
 
 

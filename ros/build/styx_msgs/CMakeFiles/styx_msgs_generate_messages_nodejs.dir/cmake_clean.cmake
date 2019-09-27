@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/styx_msgs_generate_messages_nodejs"
   "/home/student/Documents/Final-System-Integrated/ros/devel/share/gennodejs/ros/styx_msgs/msg/Lane.js"
   "/home/student/Documents/Final-System-Integrated/ros/devel/share/gennodejs/ros/styx_msgs/msg/Waypoint.js"
+  "/home/student/Documents/Final-System-Integrated/ros/devel/share/gennodejs/ros/styx_msgs/msg/CustomTrafficLight.js"
   "/home/student/Documents/Final-System-Integrated/ros/devel/share/gennodejs/ros/styx_msgs/msg/TrafficLightArray.js"
   "/home/student/Documents/Final-System-Integrated/ros/devel/share/gennodejs/ros/styx_msgs/msg/TrafficLight.js"
 )

@@ -125,6 +125,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/student/Documents/Final-System-Integrated/ros/build/waypoint_loader/cmake_install.cmake")
   include("/home/student/Documents/Final-System-Integrated/ros/build/waypoint_updater/cmake_install.cmake")
   include("/home/student/Documents/Final-System-Integrated/ros/build/tl_detector/cmake_install.cmake")
+  include("/home/student/Documents/Final-System-Integrated/ros/build/wolfpack_visualisation/cmake_install.cmake")
 
 endif()
 

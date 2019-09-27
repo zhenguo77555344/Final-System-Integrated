@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLight.msg;/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLightArray.msg;/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/Waypoint.msg;/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/Lane.msg"
+messages_str = "/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/CustomTrafficLight.msg;/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLight.msg;/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/TrafficLightArray.msg;/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/Waypoint.msg;/home/student/Documents/Final-System-Integrated/ros/src/styx_msgs/msg/Lane.msg"
 services_str = ""
 pkg_name = "styx_msgs"
 dependencies_str = "geometry_msgs;sensor_msgs;std_msgs"

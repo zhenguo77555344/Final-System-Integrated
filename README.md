@@ -1,13 +1,16 @@
 ### Team Members
 
-Wang Zhenguo  Udacity Account Email: zhenguo.wang@daimler.com
-Liu Chuanhao  Udacity Account Email: lch743@126.com
-Zhu Minzheng  Udacity Account Email: minzheng.zhu@daimler.com
+Name:Wang Zhenguo  Udacity Account Email: zhenguo.wang@daimler.com
+
+Name:Liu Chuanhao     Udacity Account Email: lch743@126.com
+
+Name:Zhu Minzheng  Udacity Account Email: minzheng.zhu@daimler.com
 
 ### Quick Setup for Env
 1. VirtualBox+Ubuntu
-   VirtualBox Link:
-   Udacity VM(Ubuntu) Link:
+
+   [VirtualBox Link](https://www.virtualbox.org/)
+  [ Udacity VM(Ubuntu) Link]()
 
 2. Simulator and set up sharing port
    Simulator Link:

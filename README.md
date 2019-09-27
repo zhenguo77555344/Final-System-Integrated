@@ -36,33 +36,61 @@ Port Forwarding Instructions
 
 * Add a rule that assigns 4567 as both the host port and guest Port, as in the screenshot.
 
+![Port_forward](./imgs/1_Port_forward.jpg)
 
 #### 3. Clone the repertory
     git clone https://github.com/udacity/CarND-Capstone.git
 #### 4. Python requirements set up
     cd CarND-Capstone
     pip install -r requirements.txt 
+    
+  Make sure all dependencies are installed successfully.This is one screenshot for example:
+  
+  ![screenshot_3_dependencies](./imgs/3_Set_up_requirement.png)
 #### 5. Compile and run the code
     cd ros
     catkin_make
     source devel/setup.sh
     roslaunch launch/styx.launch
+   
+   Make sure the source code is correct if you made some change.This is one screenshot for example:
+   
+   ![screenshort_Roslaunch_styx](./imgs/4_Roslaunch_styx.png)
 
 #### 6. Trouble Shooting
-1)  TypeError:unsupported operand type(s) for -=: 'Retry' and 'int'
-    As I am located in China ,some website and source is unavailable for me,so need the source from tsinghua.
-    
-    cd CarND-Capstone
-    pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+*  TypeError:unsupported operand type(s) for -=: 'Retry' and 'int'
+
+   ![TypeError](./imgs/2_Source_lack.jpg)
+
+   As I am located in China ,some website and source is unavailable for me,so need the source from tsinghua.
+        
+        cd CarND-Capstone.   
+        pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 #### 7. click the simulator in host 
+Start the simulator in the host computer,click the SELECT button as shown.
 
-#### System Architecture Diagram
+![screenshort_Simulator](./imgs/5_Simulator_Main_En.png)
+
+Cancel the selection of Manual button,this will make the simulator works more smoothly.
+At this moment,the vehicle will move at a very low speed.
+
+![](./imgs/6_Simulator_Second_page.png)
+
+From terminal in the Virtual Machine, there is accepted message pop-up.
+ 
+![](./imgs/7_accept_message_in_VM.png)
+
+By now, the development environment is successfully set up.
+Let's move to the next parts.
+
+
+### System Architecture Diagram
 
 For this project, you'll be writing ROS nodes to implement core functionality of the autonomous vehicle system, including traffic light detection, control, and waypoint following! You will test your code using a simulator, and when you are ready, your group can submit the project to be run on Carla.
 The following is a system architecture diagram showing the ROS nodes and topics used in the project. You can refer to the diagram throughout the project as needed. The ROS nodes and topics shown in the diagram are described briefly in the Code Structure section below, and more detail is provided for each node in later classroom concepts of this lesson.
 
-#### Order of Project Development
+### Order of Project Development
 Because you will be writing code across several packages with some nodes depending on messages published by other nodes, we suggest completing the project in the following order:
 
 ##### Step 1
@@ -79,7 +107,7 @@ Waypoint publishing: Once you have correctly identified the traffic light and de
 ##### Step 4 
 * Waypoint Updater (Full): Use /traffic_waypoint to change the waypoint target velocities before publishing to /final_waypoints. Your car should now stop at red traffic lights and move when they are green.
 
-#### Meet the final target step by step
+### Meet the final target step by step
 In this section,we will follow the item 4 step by step and record what and how to do in order to meet the final target.If there is obvious latency when run the simulator, please try to cancel the label in the left of the Manual which means without manual control.
 
 
@@ -91,7 +119,7 @@ In this section,we will follow the item 4 step by step and record what and how t
 
 
 
-
+****  
 
 
 

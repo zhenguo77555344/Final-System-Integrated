@@ -1,65 +1,89 @@
 ### Team Members
 
-Name:Wang Zhenguo  Udacity Account Email: zhenguo.wang@daimler.com
+* Name:Wang Zhenguo  
+  Udacity Account Email: zhenguo.wang@daimler.com
 
-Name:Liu Chuanhao     Udacity Account Email: lch743@126.com
+* Name:Liu Chuanhao     
+  Udacity Account Email: lch743@126.com
 
-Name:Zhu Minzheng  Udacity Account Email: minzheng.zhu@daimler.com
+* Name:Zhu Minzheng  
+  Udacity Account Email: minzheng.zhu@daimler.com
 
 ### Quick Setup for Env
-1. VirtualBox+Ubuntu
+####1. VirtualBox+Ubuntu
 
-   [VirtualBox Link](https://www.virtualbox.org/)
-  [ Udacity VM(Ubuntu) Link]()
+  [VirtualBox Link](https://www.virtualbox.org/)
+  
+  [ Udacity VM(Ubuntu) Link](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/Udacity_VM_Base_V1.0.0.zip)
 
-2. Simulator and set up sharing port
-   Simulator Link:
+####2. Simulator and set up sharing port
+The system integration project uses its own simulator which will interface with your ROS code and has traffic light detection.[Simulator Link](https://github.com/udacity/CarND-Capstone/releases)
+   
    Port forwarding is required when running code on VM and simulator on host.
 For security reasons, the VM does not automatically open port forwarding, so you need to manually enable port 4567. This is needed for the C++ program to successfully connect to the host simulator.
-Port Forwarding Instructions
-1)First open up Oracle VM VirtualBox
-2)Click on the default session and select settings.
-3)Click on Network, and then Advanced.
-4)Click on Port Forwarding
-5)Click on the green plus, adds new port forwarding rule.
-6)Add a rule that assigns 4567 as both the host port and guest Port, as in the screenshot.
 
-3. Clone the repertory
+Port Forwarding Instructions
+
+* First open up Oracle VM VirtualBox
+
+* Click on the default session and select settings.
+
+* Click on Network, and then Advanced.
+
+* Click on Port Forwarding
+
+* Click on the green plus, adds new port forwarding rule.
+
+* Add a rule that assigns 4567 as both the host port and guest Port, as in the screenshot.
+
+
+####3. Clone the repertory
     git clone https://github.com/udacity/CarND-Capstone.git
-4. Python requirements set up
+####4. Python requirements set up
     cd CarND-Capstone
     pip install -r requirements.txt 
-5. Compile and run the code
+####5. Compile and run the code
     cd ros
     catkin_make
     source devel/setup.sh
     roslaunch launch/styx.launch
 
-6. Trouble Shooting
+####6. Trouble Shooting
 1)  TypeError:unsupported operand type(s) for -=: 'Retry' and 'int'
     As I am located in China ,some website and source is unavailable for me,so need the source from tsinghua.
     
     cd CarND-Capstone
     pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-7. click the simulator in host 
+####7. click the simulator in host 
 
-### System Architecture Diagram
+#### System Architecture Diagram
 
 For this project, you'll be writing ROS nodes to implement core functionality of the autonomous vehicle system, including traffic light detection, control, and waypoint following! You will test your code using a simulator, and when you are ready, your group can submit the project to be run on Carla.
 The following is a system architecture diagram showing the ROS nodes and topics used in the project. You can refer to the diagram throughout the project as needed. The ROS nodes and topics shown in the diagram are described briefly in the Code Structure section below, and more detail is provided for each node in later classroom concepts of this lesson.
 
-### Order of Project Development
+#### Order of Project Development
 Because you will be writing code across several packages with some nodes depending on messages published by other nodes, we suggest completing the project in the following order:
-1) Waypoint Updater Node (Partial): Complete a partial waypoint updater which subscribes to /base_waypoints and /current_pose and publishes to /final_waypoints.
-2) DBW Node: Once your waypoint updater is publishing /final_waypoints, the waypoint_follower node will start publishing messages to the/twist_cmd topic. At this point, you have everything needed to build the dbw_node. After completing this step, the car should drive in the simulator, ignoring the traffic lights.
-3) raffic Light Detection: This can be split into 2 parts:
+
+#####Step 1
+  * Waypoint Updater Node (Partial): Complete a partial waypoint updater which subscribes to /base_waypoints and /current_pose and publishes to /final_waypoints.
+  
+#####Step 2
+* DBW Node: Once your waypoint updater is publishing /final_waypoints, the waypoint_follower node will start publishing messages to the/twist_cmd topic. At this point, you have everything needed to build the dbw_node. After completing this step, the car should drive in the simulator, ignoring the traffic lights.
+
+#####Step 3
+* traffic Light Detection: This can be split into 2 parts:
 Detection: Detect the traffic light and its color from the /image_color. The topic /vehicle/traffic_lights contains the exact location and status of all traffic lights in simulator, so you can test your output.
 Waypoint publishing: Once you have correctly identified the traffic light and determined its position, you can convert it to a waypoint index and publish it.
-4)Waypoint Updater (Full): Use /traffic_waypoint to change the waypoint target velocities before publishing to /final_waypoints. Your car should now stop at red traffic lights and move when they are green.
 
-### Meet the final target step by step
+#####Step 4 
+* Waypoint Updater (Full): Use /traffic_waypoint to change the waypoint target velocities before publishing to /final_waypoints. Your car should now stop at red traffic lights and move when they are green.
+
+#### Meet the final target step by step
 In this section,we will follow the item 4 step by step and record what and how to do in order to meet the final target.If there is obvious latency when run the simulator, please try to cancel the label in the left of the Manual which means without manual control.
+
+
+
 
 
 

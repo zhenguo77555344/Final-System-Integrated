@@ -1,7 +1,9 @@
-### Team Members
+### Team Lead
 
 * Name:Wang Zhenguo  
   Udacity Account Email: zhenguo.wang@daimler.com
+
+### Team Members
 
 * Name:Liu Chuanhao     
   Udacity Account Email: lch743@126.com
@@ -12,12 +14,14 @@
 ### Quick Setup for Env
 #### 1. VirtualBox+Ubuntu
 
-  [VirtualBox Link](https://www.virtualbox.org/)
+  You can download VirtualBox from here: [VirtualBox Link](https://www.virtualbox.org/)
   
-  [ Udacity VM(Ubuntu) Link](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/Udacity_VM_Base_V1.0.0.zip)
+  You can download Udacity Virtual Machine based on Ubutun from here: [ Udacity VM(Ubuntu) Link](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/Udacity_VM_Base_V1.0.0.zip)
 
 #### 2. Simulator and set up sharing port
-The system integration project uses its own simulator which will interface with your ROS code and has traffic light detection.[Simulator Link](https://github.com/udacity/CarND-Capstone/releases)
+The system integration project uses its own simulator which will interface with your ROS code and has traffic light detection.
+
+You can download Simulator from here: [Simulator Link](https://github.com/udacity/CarND-Capstone/releases)
    
    Port forwarding is required when running code on VM and simulator on host.
 For security reasons, the VM does not automatically open port forwarding, so you need to manually enable port 4567. This is needed for the C++ program to successfully connect to the host simulator.
@@ -53,7 +57,7 @@ Port Forwarding Instructions
     source devel/setup.sh
     roslaunch launch/styx.launch
    
-   Make sure the source code is correct if you made some change.This is one screenshot for example:
+   Make sure the source code is correct if you made some change.This is one screenshot of successfully launched the code :
    
    ![screenshort_Roslaunch_styx](./imgs/4_Roslaunch_styx.png)
 
@@ -89,7 +93,9 @@ Let's move to the next parts.
 
 For this project, you'll be writing ROS nodes to implement core functionality of the autonomous vehicle system, including traffic light detection, control, and waypoint following! You will test your code using a simulator, and when you are ready, your group can submit the project to be run on Carla.
 The following is a system architecture diagram showing the ROS nodes and topics used in the project. You can refer to the diagram throughout the project as needed. The ROS nodes and topics shown in the diagram are described briefly in the Code Structure section below, and more detail is provided for each node in later classroom concepts of this lesson.
-
+There are also one copy of system architecture for self-driving car.
+![](./imgs/8_Project_Structure.png)
+![](./imgs/9_Self-driving-car-architecture copy.jpeg)
 ### Order of Project Development
 Because you will be writing code across several packages with some nodes depending on messages published by other nodes, we suggest completing the project in the following order:
 
@@ -101,7 +107,9 @@ Because you will be writing code across several packages with some nodes dependi
 
 ##### Step 3
 * traffic Light Detection: This can be split into 2 parts:
+
 Detection: Detect the traffic light and its color from the /image_color. The topic /vehicle/traffic_lights contains the exact location and status of all traffic lights in simulator, so you can test your output.
+
 Waypoint publishing: Once you have correctly identified the traffic light and determined its position, you can convert it to a waypoint index and publish it.
 
 ##### Step 4 
